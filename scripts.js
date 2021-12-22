@@ -41,7 +41,7 @@ function desenhar(){
         //mvendo no eixo y
         drops[i]++
 
-        if(drops[i]*fontSize>c.height && Math.random() > 0.95){
+        if(drops[i]*fontSize>c.height && Math.random() > 0.96){
             drops[i] = 0;
         }
     }
