@@ -23,7 +23,6 @@ const columns = c.width / fontSize;
 
 const drops = new Array(Math.floor(columns)).fill(1)
 
-
 function desenhar(){
     ctx.fillStyle = "rgba(0,0,0,0.05)";
     ctx.fillRect(0,0,c.width,c.height)
@@ -41,15 +40,13 @@ function desenhar(){
         //mvendo no eixo y
         drops[i]++
 
-        if(drops[i]*fontSize>c.height && Math.random() > 0.96){
+        if(drops[i] * fontSize> c.height && Math.random() > 0.96){
             drops[i] = 0;
         }
     }
-
     //chamada recursiva parar animar quadro a quadro
     window.requestAnimationFrame(desenhar)
 }
-
 desenhar()
 
 
